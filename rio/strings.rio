@@ -1,0 +1,23 @@
+[about]
+en = "string language generator"
+
+[help]
+en = "usage: rio [flags] [options] <INPUT>\n\nflags:\n\t-h\t\tPrint help message\n\t-v\t\tPrint version message\n\noptions:\n\t-l\t\tSelected as the default language\n\t-o\t\tOutput filename"
+
+[error]
+en = "error"
+
+[argument]
+en = "argument error"
+
+[output]
+en = "expected output name"
+
+[option]
+en = "no such option"
+
+[multiple]
+en = "multiple files given"
+
+[and]
+en = "and"

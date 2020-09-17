@@ -1,0 +1,3 @@
+[submodule "lib/libcx"]
+	path = lib/libcx
+	url = https://github.com/eomain/libcx
