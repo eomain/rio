@@ -9,7 +9,7 @@ Converts `.rio` definition files into C `.h` files.
 ```
 [greet]
 en = "hello"
-jp = "世界"
+jp = "こんにちは"
 ```
 
 ###### Build the header file
