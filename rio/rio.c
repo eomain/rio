@@ -83,7 +83,7 @@ int main(int argc, const char *argv[])
 				printf("%s: %s\n%s\n", NAME, VERSION, rio(help));
 				exit(EXIT_SUCCESS);
 			} else if (!strcmp(q, "-l")) {
-				opt.lang = q;
+				opt.lang = getarg_or(args, rio(lang));
 			} else if (!strcmp(q, "-o")) {
 				opt.out = getarg_or(args, rio(output));
 			} else {
@@ -99,10 +99,13 @@ int main(int argc, const char *argv[])
 		}
 	}
 	
+	if (!opt.path)
+		return EXIT_FAILURE;
+	
 	if (!opt.out)
 		opt.out = "rio.h";
 	
 	rio_option_run(&opt);
 	destroy(args);
-	return 0;
+	return EXIT_SUCCESS;
 }

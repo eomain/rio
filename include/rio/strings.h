@@ -10,6 +10,7 @@
 #define __RIO__help__en__ "usage: rio [flags] [options] <INPUT>\n\nflags:\n\t-h\t\tPrint help message\n\t-v\t\tPrint version message\n\noptions:\n\t-l\t\tSelected as the default language\n\t-o\t\tOutput filename"
 #define __RIO__error__en__ "error"
 #define __RIO__argument__en__ "argument error"
+#define __RIO__lang__en__ "expected language option"
 #define __RIO__output__en__ "expected output name"
 #define __RIO__option__en__ "no such option"
 #define __RIO__multiple__en__ "multiple files given"

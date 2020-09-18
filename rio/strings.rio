@@ -10,6 +10,9 @@ en = "error"
 [argument]
 en = "argument error"
 
+[lang]
+en = "expected language option"
+
 [output]
 en = "expected output name"
 
