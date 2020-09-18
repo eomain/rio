@@ -16,7 +16,7 @@ $(OUT): $(OBJS) $(HEADERS) libs
 	$(CC) $(OBJS) $(LIBS) -o $(OUT)
 
 %.o: %.c $(HEADERS)
-	rio strings.rio -o ../include/rio/strings.h
+	-@rio strings.rio -o ../include/rio/strings.h
 	$(CC) $(CFLAGS) -c $(?)
 	
 libs:
