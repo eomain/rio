@@ -3,8 +3,8 @@
 #ifndef __RIO__AUTOGEN____H
 #define __RIO__AUTOGEN____H
 
-#define __RIO__DEFAULT__LANG__ ja
-#define rio(id) rio_lang(id, ja)
+#define __RIO__DEFAULT__LANG__ en
+#define rio(id) rio_lang(id, en)
 #define rio_lang(id, lang) __RIO__ ## id ## __ ## lang ## __
 #define __RIO__about__en__ "string language generator"
 #define __RIO__about__ja__ "文字列言語ジェネレーター"

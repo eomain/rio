@@ -33,6 +33,9 @@ the ISO 639 language code must be supplied as a compile-time argument.
 # Change directory
 cd rio
 
+# Init libraries
+git submodule update --init --recursive
+
 # Build rio using `LANG` option (defaults to 'en' if omitted)
 make LANG=ja
 ```
