@@ -6,5 +6,5 @@
 int main() {
 	puts(rio(greet));
 	puts(rio_lang(greet, en));
-	puts(rio_lang(greet, jp));
+	puts(rio_lang(greet, ja));
 }

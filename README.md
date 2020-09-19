@@ -9,7 +9,7 @@ Converts `.rio` definition files into C `.h` files.
 ```
 [greet]
 en = "hello"
-jp = "こんにちは"
+ja = "こんにちは"
 ```
 
 ###### Build the header file
@@ -23,6 +23,18 @@ we can use the strings in our programs.
 
 ```c
 printf("%s\n", rio(greet));
+```
+
+## Build
+Rio is self-hosting. To build with any supported language as the default,
+the ISO 639 language code must be supplied as a compile-time argument.
+
+```bash
+# Change directory
+cd rio
+
+# Build rio using `LANG` option (defaults to 'en' if omitted)
+make LANG=ja
 ```
 
 ## License

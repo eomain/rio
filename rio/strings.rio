@@ -1,26 +1,35 @@
 [about]
 en = "string language generator"
+ja = "文字列言語ジェネレーター"
 
 [help]
 en = "usage: rio [flags] [options] <INPUT>\n\nflags:\n\t-h\t\tPrint help message\n\t-v\t\tPrint version message\n\noptions:\n\t-l\t\tSelected as the default language\n\t-o\t\tOutput filename"
+ja = "使用: rio [フラグ] [オプション] <入力>\n\nフラグ:\n\t-h\t\tヘルプ メッセージを印刷する\n\t-v\t\tバージョン メッセージの印刷\n\nオプション:\n\t-l\t\t既定の言語として選択\n\t-o\t\t出力ファイル名"
 
 [error]
 en = "error"
+ja = "エラー"
 
 [argument]
 en = "argument error"
+ja = "引数エラー"
 
 [lang]
 en = "expected language option"
+ja = "予期される言語オプション"
 
 [output]
 en = "expected output name"
+ja = "期待される出力名"
 
 [option]
 en = "no such option"
+ja = "そのようなオプションはありません"
 
 [multiple]
 en = "multiple files given"
+ja = "複数のファイルが与えられる"
 
 [and]
 en = "and"
+ja = "と"
