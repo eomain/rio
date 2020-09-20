@@ -41,20 +41,23 @@ static void rio_option_default(struct rio_option *opt)
 static void rio_option_run(struct rio_option *opt)
 {
 	struct lang l = lang_new();
-	input(opt->path, &l);
+	if (input(opt->path, &l) != 0) {
+		printf("%s: %s\n", rio(error), opt->path);
+		exit(EXIT_FAILURE);
+	}
 	if (output(opt->out, opt->lang, &l) != 0) {
 		printf("%s: %s: %s\n", NAME, rio(error), strerror(errno));
 		exit(EXIT_FAILURE);
 	}
 }
 
-static inline const char *getarg_or(queue q, const char *msg)
+static inline const char *getarg_or(queue args, const char *msg)
 {
-	if (empty(q)) {
+	if (empty(args)) {
 		printf("%s: %s: %s\n", NAME, rio(argument), msg);
-		exit(EXIT_SUCCESS);
+		exit(EXIT_FAILURE);
 	}
-	return ptr(dequeue(q));
+	return ptr(dequeue(args));
 }
 
 int main(int argc, const char *argv[])
